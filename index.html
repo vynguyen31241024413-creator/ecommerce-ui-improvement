@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giỏ hàng của bạn | Tiki - Giao diện minh họa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#" aria-label="Tiki - Trang chủ">tiki<span>.</span></a>
+      <p class="header-note">Mua sắm dễ dàng, an tâm lựa chọn</p>
+    </div>
+  </header>
+
+  <main class="page-container">
+    <div class="page-heading">
+      <div>
+        <p class="eyebrow">ĐƠN HÀNG CỦA BẠN</p>
+        <h1>Giỏ hàng <span class="item-count">(4 sản phẩm)</span></h1>
+        <p class="intro">Kiểm tra lại sản phẩm trước khi tiếp tục.</p>
+      </div>
+      <a class="continue-link" href="#products">← Tiếp tục mua sắm</a>
+    </div>
+
+    <div class="cart-layout">
+      <section class="product-section" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <h2 id="products-title">Sản phẩm đã chọn</h2>
+          <span class="muted">Mẫu giao diện minh họa</span>
+        </div>
+
+        <article class="product-card">
+          <img class="product-image" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=320&q=80" alt="Bình nước màu trắng">
+          <div class="product-info">
+            <div class="product-topline"><span class="seller">TIKI TRADING</span><span class="stock available">Còn hàng</span></div>
+            <h3>Bình nước tối giản</h3>
+            <p class="variant">Màu sắc: Trắng ngà · Dung tích: 500 ml</p>
+            <div class="product-bottom">
+              <div class="price-block"><strong>189.000đ</strong><del>239.000đ</del><span class="discount">-21%</span></div>
+              <div class="quantity" aria-label="Số lượng minh họa"><button type="button" aria-label="Giảm số lượng">−</button><span>1</span><button type="button" aria-label="Tăng số lượng">+</button></div>
+            </div>
+          </div>
+          <button class="remove-button" type="button" aria-label="Xóa Bình nước tối giản">×</button>
+        </article>
+
+        <article class="product-card">
+          <img class="product-image" src="https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?auto=format&fit=crop&w=320&q=80" alt="Tách cà phê trên bàn">
+          <div class="product-info">
+            <div class="product-topline"><span class="seller">GÓC NHÀ NHỎ</span><span class="stock available">Còn hàng</span></div>
+            <h3>Ly gốm thủ công</h3>
+            <p class="variant">Màu sắc: Kem · Dung tích: 350 ml</p>
+            <div class="product-bottom">
+              <div class="price-block"><strong>145.000đ</strong><del>175.000đ</del><span class="discount">-17%</span></div>
+              <div class="quantity" aria-label="Số lượng minh họa"><button type="button" aria-label="Giảm số lượng">−</button><span>1</span><button type="button" aria-label="Tăng số lượng">+</button></div>
+            </div>
+          </div>
+          <button class="remove-button" type="button" aria-label="Xóa Ly gốm thủ công">×</button>
+        </article>
+
+        <article class="product-card">
+          <img class="product-image" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=320&q=80" alt="Túi vải màu trung tính">
+          <div class="product-info">
+            <div class="product-topline"><span class="seller">MỘC & MÂY</span><span class="stock available">Còn hàng</span></div>
+            <h3>Túi vải dùng hằng ngày</h3>
+            <p class="variant">Màu sắc: Be · Kích thước: Tiêu chuẩn</p>
+            <div class="product-bottom">
+              <div class="price-block"><strong>99.000đ</strong><del>129.000đ</del><span class="discount">-23%</span></div>
+              <div class="quantity" aria-label="Số lượng minh họa"><button type="button" aria-label="Giảm số lượng">−</button><span>1</span><button type="button" aria-label="Tăng số lượng">+</button></div>
+            </div>
+          </div>
+          <button class="remove-button" type="button" aria-label="Xóa Túi vải dùng hằng ngày">×</button>
+        </article>
+
+        <article class="product-card unavailable">
+          <img class="product-image" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=320&q=80" alt="Đồng hồ đeo tay">
+          <div class="product-info">
+            <div class="product-topline"><span class="seller">NẮNG CONCEPT</span><span class="stock unavailable-label">Tạm hết hàng</span></div>
+            <h3>Đồng hồ phong cách cổ điển</h3>
+            <p class="variant">Màu sắc: Nâu · Dây: Da tổng hợp</p>
+            <div class="product-bottom">
+              <div class="price-block"><strong>320.000đ</strong><del>399.000đ</del></div>
+              <div class="quantity disabled-quantity"><span>Số lượng: 1</span></div>
+            </div>
+          </div>
+          <button class="remove-button" type="button" aria-label="Xóa Đồng hồ phong cách cổ điển">×</button>
+        </article>
+
+        <div class="unavailable-actions" aria-label="Quản lý sản phẩm không khả dụng">
+          <div class="unavailable-message">
+            <span class="unavailable-symbol" aria-hidden="true">!</span>
+            <span><strong>1 sản phẩm</strong> hiện không khả dụng. Bà có thể xóa khỏi giỏ hàng để dễ kiểm tra đơn hơn.</span>
+          </div>
+          <button type="button" class="text-button">Xóa tất cả sản phẩm không khả dụng</button>
+        </div>
+
+        <div class="shipping-progress">
+          <div class="shipping-icon" aria-hidden="true">↗</div>
+          <div class="shipping-content">
+            <strong>Ưu đãi vận chuyển</strong>
+            <p>Mua thêm <b>110.000đ</b> để đạt điều kiện miễn phí vận chuyển.</p>
+            <div class="progress-track" role="img" aria-label="Tiến trình minh họa đạt 72 phần trăm">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="summary-card" aria-labelledby="summary-title">
+        <h2 id="summary-title">Tóm tắt đơn hàng</h2>
+        <div class="summary-row"><span>Tạm tính (3 sản phẩm)</span><span>433.000đ</span></div>
+        <div class="summary-row"><span>Giảm giá</span><span class="saving">−80.000đ</span></div>
+        <div class="summary-row"><span>Phí vận chuyển</span><span>25.000đ</span></div>
+        <div class="coupon-box"><span class="coupon-icon">%</span><div><strong>Mã giảm giá</strong><p>Ưu đãi được áp dụng ở bước tiếp theo.</p></div><span class="chevron">›</span></div>
+        <div class="summary-total"><div class="summary-total-label"><span>Tổng thanh toán dự kiến</span><small>Số tiền cần thanh toán</small></div><strong>378.000đ</strong></div>
+        <p class="summary-note">Phí vận chuyển và ưu đãi cuối cùng có thể thay đổi theo địa chỉ nhận hàng.</p>
+        <button type="button" class="checkout-button">Tiến hành thanh toán <span>→</span></button>
+        <div class="secure-note"><span aria-hidden="true">✓</span> Thông tin đơn hàng được hiển thị rõ ràng</div>
+      </aside>
+    </div>
+
+    <footer class="page-footer">
+      <span>Tiki</span>
+      <span>Giao diện học tập minh họa · Không xử lý thanh toán thật</span>
+    </footer>
+  </main>
+</body>
+</html>
