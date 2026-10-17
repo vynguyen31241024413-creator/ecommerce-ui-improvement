@@ -53,3 +53,4 @@ AI được sử dụng để hỗ trợ phân tích giao diện thương mại 
 Sau khi nhận được mã nguồn ban đầu, giao diện tiếp tục được điều chỉnh để làm nổi bật tổng thanh toán, tăng khả năng nhận biết sản phẩm không khả dụng và hoàn thiện bố cục trên máy tính lẫn điện thoại. Kết quả được kiểm tra bằng trình duyệt và Chrome DevTools nhằm đánh giá khả năng hiển thị ở các kích thước màn hình khác nhau.
 
 AI đóng vai trò là công cụ hỗ trợ phân tích và phát triển giao diện; việc lựa chọn vấn đề, đối chiếu với website thực tế và điều chỉnh kết quả được thực hiện trong quá trình hoàn thiện dự án.
+
