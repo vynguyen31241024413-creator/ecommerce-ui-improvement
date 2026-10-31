@@ -139,12 +139,12 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
 }
 
 .product-image {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
   flex-shrink: 0;
 
   object-fit: contain;
-  padding: 12px;
+  padding: 4px;
 
   border-radius: 16px;
   background-color: #ffffff;
