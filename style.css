@@ -13,22 +13,6 @@
   --shadow: 0 8px 26px rgba(0, 0, 0, 0.055);
 }
 
-* { box-sizing: border-box; }
-/* ===== Thiết lập chung ===== */
-:root {
-  --ink: #242424;
-  --muted: #808089;
-  --line: #e5e5e5;
-  --paper: #f5f5fa;
-  --white: #ffffff;
-  --green: #0b74e5;
-  --green-dark: #075bb5;
-  --green-soft: #eaf3ff;
-  --red: #bd5149;
-  --radius: 16px;
-  --shadow: 0 8px 26px rgba(0, 0, 0, 0.055);
-}
-
 * { 
   box-sizing: border-box; 
 }
@@ -101,7 +85,17 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px; }
 .item-count { color: var(--muted); font-size: 16px; font-weight: 500; letter-spacing: 0; }
 .intro { margin: 0; color: var(--muted); font-size: 14px; }
-.continue-link { color: var(--green); font-size: 13px; font-weight: 700; white-space: nowrap; }
+.continue-link {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
 .cart-layout {
   display: grid;
@@ -122,16 +116,18 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
 .muted { color: var(--muted); font-size: 12px; }
 
 .product-card {
-  position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 16px;
-  padding: 17px;
-  margin-bottom: 12px;
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+
+  margin: 16px 0;
+  padding: 20px;
+
+  border: 1px solid #dce3ed;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .product-image {
@@ -149,12 +145,22 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
 .stock { padding: 3px 8px; border-radius: 20px; font-size: 10px; font-weight: 700; }
 .available { color: var(--green); background: var(--green-soft); }
 .unavailable-label { color: #8a5b2b; background: #fff1df; }
-.product-card h3 { margin: 0 0 5px; font-size: 15px; line-height: 1.4; }
+.product-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #242424;
+}
 .variant { margin: 0 0 12px; color: var(--muted); font-size: 12px; }
 
 .product-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
 .price-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
-.price-block strong { color: var(--green-dark); font-size: 16px; }
+.price-block strong {
+  color: #0b74e5;
+  font-size: 18px;
+  font-weight: 700;
+}
 .price-block del { color: #9aa39e; font-size: 12px; }
 .discount { padding: 2px 5px; color: var(--red); background: #fff0ee; border-radius: 5px; font-size: 10px; font-weight: 700; }
 
@@ -303,7 +309,6 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
   .brand { font-size: 23px; }
   .page-container { padding: 25px 15px 20px; }
   .page-heading { align-items: flex-start; flex-direction: column; gap: 12px; margin-bottom: 22px; }
-  .continue-link { font-size: 12px; }
   .cart-layout { grid-template-columns: 1fr; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 3px; }
   .product-card { align-items: flex-start; gap: 11px; padding: 12px; }
