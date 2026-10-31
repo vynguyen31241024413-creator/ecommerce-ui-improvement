@@ -169,7 +169,12 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
 }
 .variant { margin: 0 0 12px; color: var(--muted); font-size: 12px; }
 
-.product-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+.product-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
 .price-block { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
 .price-block strong {
   color: #0875df;
