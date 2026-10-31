@@ -14,6 +14,30 @@
 }
 
 * { box-sizing: border-box; }
+/* ===== Thiết lập chung ===== */
+:root {
+  --ink: #242424;
+  --muted: #808089;
+  --line: #e5e5e5;
+  --paper: #f5f5fa;
+  --white: #ffffff;
+  --green: #0b74e5;
+  --green-dark: #075bb5;
+  --green-soft: #eaf3ff;
+  --red: #bd5149;
+  --radius: 16px;
+  --shadow: 0 8px 26px rgba(0, 0, 0, 0.055);
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+/* Quy tắc hiển thị hình ảnh */
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 body {
   margin: 0;
