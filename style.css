@@ -153,12 +153,12 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
 }
 
 .product-image {
-  width: 120px;
-  height: 120px;
+  width: 100%;
+  height: 170px;
   flex-shrink: 0;
 
-  object-fit: cover;
-  padding: 0;
+  object-fit: contain;
+  padding: 10px;
 
   border-radius: 12px;
   background-color: #ffffff;
@@ -383,41 +383,37 @@ h1 { margin-bottom: 5px; font-size: clamp(27px, 3vw, 36px); letter-spacing: -1px
     gap: 12px;
     padding: 16px;
   }
-}
+
   .product-image {
-  width: 100px;
-  height: 100px;
-}
-  .product-card h3 {
-  font-size: 16px;
-}
+    width: 100%;
+    height: 150px;
+  }
+
+  .product-card h3 { font-size: 16px; }
   .product-topline { gap: 5px; }
   .seller { font-size: 9px; }
   .stock { font-size: 9px; }
   .variant { margin-bottom: 10px; font-size: 11px; }
   .product-bottom { align-items: flex-start; flex-direction: column; gap: 9px; }
   .price-block { gap: 6px; }
-  .price-block strong {
-  font-size: 18px;
-}
- .remove-button {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  .price-block strong { font-size: 18px; }
 
-  padding: 6px 10px;
-  border: 1px solid #f1cccc;
-  border-radius: 8px;
-
-  background-color: #fff5f5;
-  color: #d64545;
-
-  font-size: 13px;
-  font-weight: 600;
+  .remove-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px 10px;
+    border: 1px solid #f1cccc;
+    border-radius: 8px;
+    background-color: #fff5f5;
+    color: #d64545;
+    font-size: 13px;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 380px) {
-  .product-image { width: 68px; height: 68px; flex-basis: 68px; }
+  .product-image { height: 120px; }
   .product-card { gap: 8px; padding: 10px; }
   .product-info { padding-right: 16px; }
   .price-block { gap: 5px; }
