@@ -1,4 +1,5 @@
 # AI Usage Log
+## BUỔI 1
 
 ## 1. Công cụ AI
 
@@ -92,3 +93,84 @@ Các đề xuất của AI không được sử dụng hoàn toàn mà được 
 - **Cách làm nổi bật tổng thanh toán bằng CSS:** Tổng thanh toán được thiết kế nổi bật hơn bằng cách thay đổi màu nền, đường viền và kích thước chữ. Việc kết hợp các thuộc tính như background, border, font-size và font-weight giúp người dùng dễ nhận ra số tiền cuối cùng cần thanh toán mà không phải tìm kiếm giữa nhiều thông tin khác.
 
 - **Cách điều chỉnh giao diện bằng @media:** Quy tắc @media cho phép áp dụng những kiểu CSS khác nhau tùy theo kích thước màn hình. Chẳng hạn, trên máy tính, danh sách sản phẩm và bảng tổng kết có thể nằm cạnh nhau; khi chuyển sang màn hình điện thoại, bố cục được điều chỉnh thành một cột để nội dung không bị chật hoặc tràn khỏi màn hình.
+
+
+## BUỔI 2
+
+**Prompt 6: Kiểm tra việc liên kết tệp CSS với HTML**
+
+Tôi đang có hai tệp index.html và style.css trong cùng một thư mục dự án. Hãy hướng dẫn tôi cách liên kết tệp CSS với HTML bằng thẻ link trong phần head. Giải thích ý nghĩa của từng thuộc tính trong đoạn mã liên kết và hướng dẫn cách kiểm tra trên Google Chrome DevTools để biết trình duyệt đã tải tệp CSS thành công hay chưa. Hãy chỉ rõ cách nhận biết trường hợp đường dẫn bị sai.
+
+**Prompt 7: Giải thích CSS Selectors và Box Model**
+
+Hãy giải thích cách sử dụng CSS Selectors và Box Model trong giao diện giỏ hàng của tôi. Làm rõ cách các bộ chọn như .product-card, .product-card h3 và .price-block strong xác định những thành phần cần định dạng.
+
+Đồng thời, giải thích vai trò của các thuộc tính margin, padding, border, width và height. Hãy lấy ví dụ trực tiếp từ thẻ sản phẩm trong giao diện để tôi hiểu cách điều chỉnh khoảng cách, kích thước và đường viền mà không làm ảnh hưởng đến những khu vực khác.
+
+**Prompt 8: Giải thích cách sử dụng Flexbox**
+
+Trong giao diện giỏ hàng, tôi sử dụng Flexbox để sắp xếp khu vực giá bán và số lượng sản phẩm. Hãy giải thích cách hoạt động của display: flex, justify-content, align-items và gap.
+
+Ví dụ, với đoạn CSS:
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+Hãy giải thích vai trò của từng thuộc tính, cách chúng phối hợp với nhau và kết quả hiển thị trong giao diện. Trình bày theo cách dễ hiểu để sinh viên có thể tự giải thích lại khi giảng viên hỏi.
+
+**Prompt 9: Giải thích cách sử dụng CSS Grid**
+
+Tôi đang sử dụng CSS Grid để bố trí danh sách sản phẩm và khu vực tổng kết đơn hàng. Hãy giải thích cách hoạt động của display: grid, grid-template-columns và gap trong đoạn mã CSS của tôi.
+
+Đặc biệt, hãy giải thích ý nghĩa của:
+
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+Trình bày cách hai cột sản phẩm được hình thành, ý nghĩa của repeat(), minmax(), 1fr và khoảng cách giữa các thẻ. Sau đó giải thích cách thay đổi bố cục thành một cột trên màn hình nhỏ bằng CSS Media Query. Viết thành các đoạn văn phù hợp để đưa vào báo cáo thực hành.
+
+**Prompt 10: Giải thích Responsive Design và Media Query**
+
+Tôi muốn giao diện giỏ hàng hiển thị phù hợp trên cả máy tính và điện thoại. Hãy giải thích cách sử dụng @media trong CSS để thay đổi bố cục theo chiều rộng màn hình.
+
+Dựa trên mã CSS hiện tại của tôi, hãy phân tích cách điều chỉnh .cart-layout, .product-section, .product-card, .product-image và .product-bottom khi kích thước màn hình giảm xuống.
+
+Hãy giải thích sự khác nhau giữa việc chuyển bố cục tổng thể thành một cột và việc chuyển danh sách sản phẩm từ hai cột thành một cột. Không tự thay đổi các giá trị breakpoint nếu không có lý do cụ thể.
+
+**Prompt 11: Giải thích hiệu ứng Hover và Focus**
+
+Hãy giải thích cách sử dụng :hover và :focus-visible trong CSS để cải thiện khả năng tương tác của giao diện giỏ hàng.
+
+Tôi muốn hiểu cách áp dụng hiệu ứng khi người dùng di chuột vào thẻ sản phẩm hoặc nút thanh toán, cũng như khi người dùng sử dụng bàn phím để điều hướng đến nút thao tác. Hãy giải thích sự khác nhau giữa hai trạng thái này, ý nghĩa của các thuộc tính CSS thường dùng và cách kiểm tra trực tiếp trên trình duyệt.
+
+**Prompt 12: Hỗ trợ điều chỉnh mã CSS hiện tại**
+
+Tôi sẽ cung cấp mã CSS mới nhất của giao diện giỏ hàng. Hãy đọc và phân tích đúng theo mã nguồn tôi gửi, không sử dụng lại các phiên bản CSS cũ.
+
+Hãy kiểm tra cách tổ chức bố cục, kích thước thẻ sản phẩm, hình ảnh, vị trí nút xóa, khoảng cách giữa các thành phần và các quy tắc Responsive Design. Khi giải thích hoặc đề xuất thay đổi, hãy chỉ rõ selector và thuộc tính liên quan. Không tự thêm những thuộc tính mà mã nguồn hiện tại chưa có hoặc khẳng định một thay đổi đã được thực hiện khi chưa có căn cứ.
+
+**4. Phần tự kiểm tra và điều chỉnh của cá nhân**
+
+Sau khi tham khảo kết quả từ ChatGPT, em chủ động kiểm tra và điều chỉnh mã nguồn để phù hợp với yêu cầu bài tập và giao diện mong muốn.
+
+Đối với mã nguồn HTML/CSS: Em kiểm tra cấu trúc tệp dự án, bảo đảm index.html và style.css được đặt đúng vị trí và liên kết với nhau.
+
+Đối với bố cục sản phẩm: Em điều chỉnh CSS Grid để danh sách sản phẩm hiển thị thành hai cột trên màn hình lớn và chuyển thành một cột khi chiều rộng màn hình nhỏ hơn hoặc bằng 520px.
+
+Đối với thẻ sản phẩm: Em điều chỉnh kích thước, khoảng cách, hình ảnh, đường viền và hiệu ứng đổ bóng để các sản phẩm được trình bày rõ ràng hơn.
+
+Đối với thông tin sản phẩm: Em điều chỉnh Flexbox để sắp xếp giá bán và số lượng; trên màn hình nhỏ, các thành phần được chuyển sang bố cục theo chiều dọc.
+
+Đối với nút thao tác: Em điều chỉnh vị trí nút xóa bằng cách kết hợp position: relative ở thẻ sản phẩm và position: absolute ở nút, giúp nút nằm ở góc trên bên phải của từng thẻ.
+
+Đối với giao diện điện thoại: Tôi điều chỉnh các quy tắc @media để thay đổi bố cục tổng thể, kích thước hình ảnh, chữ và khoảng cách giữa các thành phần.
+
+Đối với việc kiểm tra kết quả: Em sử dụng trình duyệt và Chrome DevTools để quan sát giao diện ở các kích thước màn hình khác nhau, từ đó tiếp tục chỉnh sửa những vị trí chưa hiển thị như mong muốn.
+
